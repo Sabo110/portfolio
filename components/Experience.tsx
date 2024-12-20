@@ -19,10 +19,10 @@ export const Experience = () => {
         }
     ]
     return (
-        <div className='xl:px-[80px] xl:py-[60px] lg:px-[40px] lg:py-[30px] bg-primary text-white'>
-            <div className='px-[32px] space-y-[20px] '>
+        <div className='py-10 px-4 bg-black text-white'>
+            <div className='space-y-5'>
                 <h1 className='text-center display_text'>Mes <span className='font-extrabold'>Expériences</span></h1>
-                <div className='space-y-[32px]'>
+                <div className='space-y-5 sm:w-[500px] md:w-full lg:w-[800px] xl:w-[1000px] sm:mx-auto'>
                     {Experiences.map((experience, index) => (
                         <ExperienceCard
                             key={index}
@@ -46,13 +46,13 @@ type ExperienceCardProps = {
 }
 function ExperienceCard({ title, logo, description, data }: ExperienceCardProps) {
     return (
-        <div className='rounded-[10px] px-[24px] py-[30px] space-y-[28px] border border-gray-100'>
-            <div className='flex md:flex-row md:items-center md:justify-between flex-col md:gap-0 gap-[20px]'>
-                <div className='flex gap-4 items-center'>
-                    <Image src={logo} alt='logo de entreprise' className='w-[32px] h-[32px]'/>
-                    <span className='h4 font-semibold'> {title} </span>
+        <div className='px-6 py-[30px] space-y-7 rounded-[10px] border border-zinc-500'>
+            <div className='space-y-[30px] md:space-y-0 md:flex md:justify-between md:items-center'>
+                <div className='flex items-center gap-[30px]'>
+                    <Image src={logo} alt='logo de entreprise' className='w-[32px] h-[32px]' />
+                    <span className='font-semibold'> {title} </span>
                 </div>
-                <span> {data} </span>
+                <div><span> {data} </span></div>
             </div>
             <div>
                 <p>

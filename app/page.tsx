@@ -12,7 +12,7 @@ import { Temoignages } from "@/components/Temoignages";
 export default function Home() {
   return (
     <div>
-      <div className="max-w-[1440px] mx-auto border-2 border-red-900">
+      <div className="max-w-[1440px] mx-auto">
         <Navbar />
         <NavBarMobile />
         <HeroSection />

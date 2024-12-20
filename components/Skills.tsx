@@ -34,7 +34,7 @@ export const Skills = () => {
         <div className='py-10 px-4'>
             <div className='space-y-5'>
                 <h1 className='display_text text-center'>Mes <span className='font-extrabold'>Compétences</span></h1>
-                <div className='grid grid-cols-2 gap-5 sm:grid-cols-3 sm:w-[524.5px] sm:mx-auto'>
+                <div className='grid grid-cols-2 gap-5 sm:grid-cols-3 w-[343px] sm:w-[524.5px] mx-auto'>
                     {skills.map((skill, index) => (
                         <SkillCard logo={skill.logo} text={skill.text} key={index}/>
                     ))}
