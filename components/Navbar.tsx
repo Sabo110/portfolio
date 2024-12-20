@@ -24,7 +24,7 @@ export const Navbar = () => {
         }
     ]
   return (
-    <div className='py-[24px] lg:px-[20px] xl:px-[80px] h-[104px] hidden lg:block border border-black'>
+    <div className='py-[24px] lg:px-[20px] xl:px-[80px] h-[104px] hidden lg:block '>
         <div className='px-8 flex justify-between items-center'>
             {/* le logo */}
             <div className='w-[140px] h-10'>
