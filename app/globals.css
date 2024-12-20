@@ -41,87 +41,44 @@ body {
     /* Taille de la police */
     line-height: 28px;
   }
+
   .outlined {
     font-size: 24px;
     /* Taille de la police */
     line-height: 28px;
   }
 }
-.display_text_m {
-  font-size: 24px;
-  line-height: 28px;
-}
 
-.outlined_regular {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 400;
-  color: transparent;
-  /* Rendre le texte intérieur transparent */
-  -webkit-text-stroke: 2px rgb(255, 252, 252);
-  /* Taille et couleur du contour */
-}
-
-
-.outlined_semibold {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 700;
-  color: transparent;
-  /* Rendre le texte intérieur transparent */
-  -webkit-text-stroke: 2px black;
-  /* Taille et couleur du contour */
-}
-
-.outlined_extrabold {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 800;
-  color: transparent;
-  /* Rendre le texte intérieur transparent */
-  -webkit-text-stroke: 2px black;
-  /* Taille et couleur du contour */
-}
-
-h1 {
+.heading_h1 {
   font-size: 36px;
   line-height: 44px;
+  letter-spacing: -0.02em;
 }
-
-h2 {
+.heading_h2 {
   font-size: 32px;
   line-height: 40px;
+  letter-spacing: -0.02em;
 }
-
-.h3 {
+.heading_h3 {
   font-size: 28px;
   line-height: 32px;
+  letter-spacing: -0.02em;
 }
-
-h4 {
+.heading_h4 {
   font-size: 24px;
   line-height: 28px;
+  letter-spacing: -0.02em;
 }
-
-h5,
-.p1,
-.btn_text {
+.heading_h5 {
   font-size: 20px;
   line-height: 24px;
-  text-decoration: underline;
+  letter-spacing: -0.02em;
 }
-
-h6,
-.btn_text2 {
+.heading_h6 {
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: -0.02em;
 }
-
-.p3 {
-  font-size: 12px;
-  line-height: 16px;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;

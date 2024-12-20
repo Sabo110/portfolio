@@ -4,6 +4,7 @@ import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
+import { NavBarMobile } from "@/components/NavBarMobile";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Temoignages } from "@/components/Temoignages";
@@ -13,6 +14,7 @@ export default function Home() {
     <div>
       <div className="max-w-[1440px] mx-auto border-2 border-red-900">
         <Navbar />
+        <NavBarMobile />
         <HeroSection />
         <Skills />
         <Experience />

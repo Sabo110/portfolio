@@ -21,7 +21,7 @@ export const Navbar = () => {
         }
     ]
   return (
-    <div className='lg:py-[24px] lg:px-[80px] flex items-center justify-around'>
+    <div className='lg:py-[24px] lg:px-[80px] flex items-center justify-around hidden md:block'>
         <div>logo</div>
         <div className='space-x-4'>
             {links.map(link => (
