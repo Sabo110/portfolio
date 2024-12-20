@@ -9,7 +9,7 @@ import { SheetMenu } from './SheetMenu'
 export const NavBarMobile = () => {
     const [open, setOpen] = React.useState(false)
     return (
-        <div className='md:hidden h-[72px] p-4 '>
+        <div className='lg:hidden h-[72px] p-4 '>
             <SheetMenu open={open} setOpen={setOpen}/>
             <div className='flex items-center justify-between'>
                 <div className='w-[140px] h-[40px] flex justify-center items-center '>
