@@ -4,6 +4,7 @@
 
 body {
   font-family: var(--font-sora), sans-serif;
+  box-sizing: border-box;
 }
 
 .display_text {
@@ -35,6 +36,43 @@ body {
   /* Tracking, exprimé en proportion de la taille de police */
 }
 
+
+
+.heading_h1 {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+}
+
+.heading_h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.heading_h3 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.heading_h4 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+.heading_h5 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.heading_h6 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
 @media screen and (max-width: 1023px) {
   .display_text {
     font-size: 24px;
@@ -47,37 +85,12 @@ body {
     /* Taille de la police */
     line-height: 28px;
   }
-}
 
-.heading_h1 {
-  font-size: 36px;
-  line-height: 44px;
-  letter-spacing: -0.02em;
-}
-.heading_h2 {
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.02em;
-}
-.heading_h3 {
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: -0.02em;
-}
-.heading_h4 {
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-}
-.heading_h5 {
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-}
-.heading_h6 {
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: -0.02em;
+  .heading_h2 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
 }
 @layer base {
   :root {
