@@ -53,7 +53,7 @@ type ProjectCradProps = {
 function ProjectCrad({ project }: ProjectCradProps) {
     return (
         <div className='sm:py-5 sm:flex sm:items-center sm:gap-5  sm:min-w-[608px] sm:max-w-[700px] sm:mx-auto md:min-w-[716px] md:max-w-[800px] lg:min-w-[908px] xl:min-w-[1164px]'>
-            <div className={cn('sm:w-[300px] sm:h-[200px] md:w-[350px] md:h-[250px] xl:w-[450px] xl:h-[350px]', project.order)}>
+            <div className={cn('h-[350px] sm:w-[300px] sm:h-[200px] md:w-[350px] md:h-[250px] xl:w-[450px] xl:h-[350px]', project.order)}>
                 <Image src={project.image} alt='image de couverture du projet' className='object-cover w-full h-full' />
             </div>
             <div className='flex flex-col gap-7  sm:w-[108px] grow'>
