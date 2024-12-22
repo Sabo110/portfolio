@@ -1,21 +1,22 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import React from 'react'
-import facebook from "@/public/facebook_icon.svg"
+import cediclin from "@/public/cediclin.png"
+import ramat_service from "@/public/ramat_service.png"
 
 export const Experience = () => {
     const Experiences = [
         {
-            logo: facebook,
+            logo: cediclin,
             title: 'Développeur web fullstack chez CEDICLIN',
             description: 'stagiaire en developpment web avec la stack symphony',
-            date: 'une date'
+            date: 'Juin - septembre 2022'
         },
         {
-            logo: facebook,
+            logo: ramat_service,
             title: 'Développeur web fullstack chez RAMAT SERVICE',
             description: 'stagaiare en developpement web avec la stack next js',
-            date: 'une date'
+            date: 'Mais - octobre 2024'
         }
     ]
     return (

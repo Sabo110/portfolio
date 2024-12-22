@@ -1,5 +1,5 @@
 import { AboutMe } from "@/components/AboutMe";
-// import { Contact } from "@/components/Contact";
+import { Contact } from "@/components/Contact";
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
@@ -21,7 +21,7 @@ export default function Home() {
         <AboutMe />
         <Projects />
         <Temoignages />
-        {/* <Contact /> */}
+        <Contact />
         <Footer />
       </div>
     </div>

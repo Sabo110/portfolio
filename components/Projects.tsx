@@ -1,8 +1,6 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import React from 'react'
-import img1 from "@/public/img1.png"
-import img2 from "@/public/img2.png"
 import img3 from "@/public/img3.svg"
 import img4 from "@/public/img4.svg"
 
@@ -13,14 +11,14 @@ export const Projects = () => {
     const Projects = [
         {
             title: 'Site internet pour une épicerie',
-            demo: 'https://www.epicerie-mama-vercel.app',
+            demo: 'https://site-epicerie-pour-mama.vercel.app',
             description: "Site quipresente les differents produits d'une épicerie.",
             image: img3,
             number: '01'
         },
         {
             title: 'blog sur le developpement personnel',
-            demo: 'https://www.epicerie-mama-vercel.app',
+            demo: 'https://the-mind-set.netlify.app',
             description: "Blog qui présente quelques articles sur le developpment personne, la motivation et les relations homme-femme.",
             image: img4,
             order: 'sm:order-last',
@@ -29,7 +27,7 @@ export const Projects = () => {
 
     ]
     return (
-        <div className='md:px-[16px] md:py-[40px] px-[16px] py-[40px] bg-primary text-white' >
+        <div className='md:px-[16px] md:py-[40px] px-[16px] py-[40px] bg-primary text-white' id='projects'>
             <div className='lg:px-[32px] space-y-[20px]'>
                 <h1 className='text-center display_text'>Mes <span className='font-extrabold'>Projets</span></h1>
                     {Projects.map((project, index) => (
@@ -60,7 +58,7 @@ function ProjectCrad({ project }: ProjectCradProps) {
                 <span className='display_text font-extrabold'> {project.number} </span>
                 <span className='heading_h2 lg:font-bold font-extrabold'> {project.title} </span>
                 <p className=''> {project.description} </p>
-                <a href={project.demo}>
+                <a href={project.demo} target='_blank'>
                     <ExternalLink size={30} />
                 </a>
             </div>

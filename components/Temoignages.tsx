@@ -3,20 +3,21 @@ import Image from 'next/image'
 import React from 'react'
 import { Separator } from "@/components/ui/separator"
 import quote from "@/public/quote.png"
-import per1 from "@/public/per1.png"
 import { cn } from '@/lib/utils'
+import femme from "@/public/femme.jpg"
+import homme from "@/public/homme.jpg"
 
 export const Temoignages = () => {
     const Temoignages = [
         {
             text: 'Un site moderne et pratique ! YOBA SABO a parfaitement compris mes besoins. Je recommande vivement ses services.',
-            image: per1,
+            image: femme,
             name: 'Mbanou Yoba',
             profession: 'Sécrétaire'
         },
         {
             text: 'Blog superbe et fonctionnel ! Travail professionnel et soigné. YOBA SABO a été disponible et très à l’écoute.',
-            image: per1,
+            image: homme,
             name: 'Christian',
             profession: 'Blogueur',
             bg: true
@@ -49,7 +50,7 @@ function TemoignageCrad({ temoignage }: TemoignageCradProps) {
     return (
         <div className={cn('md:w-[310px] md:p-[40px] lg:w-[370px] xl:w-[370px] p-6 w-[303px] sm:w-[270px] rounded-[20px] flex flex-col items-center gap-6 shadow-lg', temoignage.bg ? 'bg-primary text-white' : null)}>
             <div className='w-[96px] h-[96px] relative'>
-                <Image src={temoignage.image} alt='image du concerné' className='' />
+                <Image src={temoignage.image} alt='image du concerné' className='object-fill h-full w-full rounded-full' />
                 <Image src={quote} alt='double quote' className='absolute top-[66px] left-[66px]' />
             </div>
 

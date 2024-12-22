@@ -35,8 +35,11 @@ body {
   letter-spacing: -0.02em;
   /* Tracking, exprimé en proportion de la taille de police */
 }
-
-
+.p3 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+}
 
 .heading_h1 {
   font-size: 36px;
@@ -82,6 +85,22 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
+}
+.menu a {
+  position: relative;
+}
+.menu a::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left:0;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: all .5s;
+}
+.menu a:hover::before {
+  width: 100%;
 }
 @media screen and (max-width: 1023px) {
   .display_text {

@@ -1,22 +1,33 @@
 import React from 'react'
 import banner from "@/public/Banner.svg"
 import Image from 'next/image'
-import facebook from "@/public/facebook_icon.svg"
+import facebook from "@/public/facebookpro.svg"
 import { cn } from '@/lib/utils'
+import linkedin from "@/public/linkedin.svg"
+import whatsapp from "@/public/whatsapp.svg"
+import gmail from "@/public/gmail.png"
 
 export const HeroSection = () => {
     const socials = [
         {
-            icon: facebook,
-            bg: 'bg-primary'
+            icon: linkedin,
+            bg: 'bg-primary',
+            link: 'https://www.linkedin.com/in/jalloud-phanuel'
+        },
+        {
+            icon: whatsapp,
+            bg: '',
+            link: 'https://wa.me/237659182723'
+        },
+        {
+            icon: gmail,
+            bg: '',
+            link: 'mailto:saboprofessionel@gmail.com'
         },
         {
             icon: facebook,
-            bg: ''
-        },
-        {
-            icon: facebook,
-            bg: ''
+            bg: '',
+            link: 'https://web.facebook.com/profile.php?id=61570390508268'
         }
     ]
     return (
@@ -41,10 +52,10 @@ export const HeroSection = () => {
                         </p>
                     </div>
                     {/* section reseau sociaux */}
-                    <div className='flex items-center gap-6 py-1 sm:absolute sm:top-[270px] md:top-[320px] lg:top-[380px] xl:top-[400px]'>
+                    <div className='flex items-center gap-6 py-1 sm:absolute sm:top-[290px] md:top-[320px] lg:top-[380px] xl:top-[400px]'>
                         {socials.map((social, index) => (
                             <div key={index} className={cn('w-[48px] h-[48px] p-3 rounded-[4px] border border-black')}>
-                                <Image src={social.icon} alt='reseau social w-5 h-5 flex justify-center items-center' />
+                                <a href={social.link} target='_blank'><Image src={social.icon} alt='reseau social w-5 h-5 flex justify-center items-center' /></a>
                             </div>
                         ))}
                     </div>

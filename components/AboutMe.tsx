@@ -4,7 +4,7 @@ import aboutme from "@/public/aboutme.svg"
 
 export const AboutMe = () => {
     return (
-        <div className='md:px-[80px] md:py-[60px] lg:px-[40px] px-[16px] py-[40px] '>
+        <div className='md:px-[80px] md:py-[60px] lg:px-[40px] px-[16px] py-[40px] ' id='about_me'>
             <div className='space-y-5 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-10  lg:w-[950px] xl:w-[1100px] lg:mx-auto'>
                 <div className="">
                     <Image src={aboutme} alt='une image de moi' className='object-fill h-full w-full' />

@@ -32,9 +32,9 @@ export const Navbar = () => {
             </div>
             {/* le menu */}
             <div>
-                <ul className='flex gap-8'>
+                <ul className='flex gap-8 menu'>
                     {links.map(item => (
-                        <li key={item.link} className='heading_h5 font-semibold'><a href=""> {item.text} </a></li>
+                        <li key={item.link} className='heading_h5 font-semibold'><a href={item.link}> {item.text} </a></li>
                     ))}
                 </ul>
             </div>

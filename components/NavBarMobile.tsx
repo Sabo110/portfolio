@@ -16,7 +16,7 @@ export const NavBarMobile = () => {
                     <Image src={logo} alt='mon nom' />
                 </div>
                 <div className='w-9 h-9 ' onClick={() => setOpen(true)}>
-                    <Image src={burger} alt='menu burger' className='object-fill w-full h-full' />
+                    <Image src={burger} alt='menu burger' className='object-fill w-full h-full cursor-pointer' />
                 </div>
             </div>
         </div>
