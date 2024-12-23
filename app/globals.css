@@ -6,7 +6,16 @@ body {
   font-family: var(--font-sora), sans-serif;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar {
+  background-color: white;
+  width: 8px;
+  padding: 100px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  height: 200px;
+}
 .display_text {
   font-size: 48px;
   /* Taille de la police */
