@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import img3 from "@/public/img3.svg"
 import img4 from "@/public/img4.svg"
+import easyorder from "@/public/capture-easy-order.png"
 
 import { cn } from '@/lib/utils'
 import { ExternalLink } from 'lucide-react';
@@ -10,11 +11,19 @@ import { ExternalLink } from 'lucide-react';
 export const Projects = () => {
     const Projects = [
         {
+            title: 'Plateforme de commande via whatsapp',
+            demo: 'https://easy-order-by-me.vercel.app',
+            description: "Une plateforme qui permet aux vendeurs de produits ou articles physiques de pouvoir se faire commander leurs produits ou articles par whatsapp",
+            image: easyorder,
+            order: 'sm:order-last',
+            number: '01'
+        },
+        {
             title: 'Site internet pour une épicerie',
             demo: 'https://site-epicerie-pour-mama.vercel.app',
             description: "Site quipresente les differents produits d'une épicerie.",
             image: img3,
-            number: '01'
+            number: '02'
         },
         {
             title: 'blog sur le developpement personnel',
@@ -22,7 +31,7 @@ export const Projects = () => {
             description: "Blog qui présente quelques articles sur le developpment personne, la motivation et les relations homme-femme.",
             image: img4,
             order: 'sm:order-last',
-            number: '02'
+            number: '03'
         },
 
     ]
