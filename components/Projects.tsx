@@ -20,20 +20,21 @@ export const Projects = () => {
             number: '01'
         },
         {
-            title: 'Site internet pour une épicerie',
-            demo: 'https://site-epicerie-pour-mama.vercel.app',
-            description: "Site quipresente les differents produits d'une épicerie.",
-            image: epicerie,
-            number: '02'
-        },
-        {
             title: "Maîtrisez l'art du maquillage avec Charming Make up",
             demo: 'https://charming-makeup.vercel.app',
             description: "Formations professionnelles en maquillage pour débutantes et passionnées. Apprenez les techniques de pro, développez votre style, et transformez votre passion en carrière.",
             image: joel_website,
+            number: '02'
+        },
+        {
+            title: 'Site internet pour une épicerie',
+            demo: 'https://site-epicerie-pour-mama.vercel.app',
+            description: "Site quipresente les differents produits d'une épicerie.",
             order: 'sm:order-last',
+            image: epicerie,
             number: '03'
         },
+        
         {
             title: 'blog sur le developpement personnel',
             demo: 'https://the-mind-set.netlify.app',
