@@ -4,6 +4,7 @@ import React from 'react'
 import easyorder from "@/public/easyorder.jpg"
 import epicerie from "@/public/epicerie.jpg"
 import blog from "@/public/blog.jpg"
+import joel_website from "@/public/joel-website.png"
 
 import { cn } from '@/lib/utils'
 import { ExternalLink } from 'lucide-react';
@@ -26,12 +27,20 @@ export const Projects = () => {
             number: '02'
         },
         {
+            title: "Maîtrisez l'art du maquillage avec Charming Make up",
+            demo: 'https://charming-makeup.vercel.app',
+            description: "Formations professionnelles en maquillage pour débutantes et passionnées. Apprenez les techniques de pro, développez votre style, et transformez votre passion en carrière.",
+            image: joel_website,
+            order: 'sm:order-last',
+            number: '03'
+        },
+        {
             title: 'blog sur le developpement personnel',
             demo: 'https://the-mind-set.netlify.app',
             description: "Blog qui présente quelques articles sur le developpment personne, la motivation et les relations homme-femme.",
             image: blog,
-            order: 'sm:order-last',
-            number: '03'
+            
+            number: '04'
         },
 
     ]
@@ -59,7 +68,7 @@ type ProjectCradProps = {
 }
 function ProjectCrad({ project }: ProjectCradProps) {
     return (
-        <div className='sm:py-5 sm:flex sm:items-center sm:gap-5  sm:min-w-[608px] sm:max-w-[700px] sm:mx-auto md:min-w-[716px] md:max-w-[800px] lg:min-w-[908px] xl:min-w-[1164px]'>
+        <div className='sm:py-5 sm:flex sm:items-center sm:gap-5  sm:min-w-[608px] sm:max-w-[700px] sm:mx-auto md:min-w-[716px] md:max-w-[800px] lg:min-w-[908px] xl:min-w-[1164px] space-y-6'>
             <div className={cn('h-[350px] sm:w-[300px] sm:h-[200px] md:w-[350px] md:h-[250px] xl:w-[450px] xl:h-[350px]', project.order)}>
                 <Image src={project.image} alt='image de couverture du projet' className='object-cover w-full h-full' placeholder='blur'/>
             </div>
