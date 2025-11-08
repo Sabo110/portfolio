@@ -11,20 +11,20 @@ import { ExternalLink } from 'lucide-react';
 
 export const Projects = () => {
     const Projects = [
-        {
-            title: 'Plateforme de commande via whatsapp',
-            demo: 'https://easy-order-by-me.vercel.app',
-            description: "Une plateforme qui permet aux vendeurs de produits ou articles physiques de pouvoir se faire commander leurs produits ou articles par whatsapp",
-            image: easyorder,
-            order: 'sm:order-last',
-            number: '01'
-        },
+        // {
+        //     title: 'Plateforme de commande via whatsapp',
+        //     demo: 'https://easy-order-by-me.vercel.app',
+        //     description: "Une plateforme qui permet aux vendeurs de produits ou articles physiques de pouvoir se faire commander leurs produits ou articles par whatsapp",
+        //     image: easyorder,
+        //     order: 'sm:order-last',
+        //     number: '01'
+        // },
         {
             title: "Maîtrisez l'art du maquillage avec Charming Make up",
             demo: 'https://charming-makeup.vercel.app',
             description: "Formations professionnelles en maquillage pour débutantes et passionnées. Apprenez les techniques de pro, développez votre style, et transformez votre passion en carrière.",
             image: joel_website,
-            number: '02'
+            number: '01'
         },
         {
             title: 'blog sur le developpement personnel',
@@ -32,14 +32,14 @@ export const Projects = () => {
             description: "Blog qui présente quelques articles sur le developpment personne, la motivation et les relations homme-femme.",
             image: blog,
             order: 'sm:order-last',
-            number: '03'
+            number: '02'
         },
         {
             title: "Site internet d'une couturière",
             demo: 'https://website-for-seamstress.vercel.app',
             description: "site internet vitrine pour une couturière afin de présenter ses services et réalisations.",
             image: seamstress,
-            number: '04'
+            number: '03'
         },
 
     ]
