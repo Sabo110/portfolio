@@ -2,7 +2,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import React from 'react'
 import easyorder from "@/public/easyorder.jpg"
-import epicerie from "@/public/epicerie.jpg"
+import seamstress from "@/public/seamstress.png"
 import blog from "@/public/blog.jpg"
 import joel_website from "@/public/joel-website.png"
 
@@ -27,20 +27,18 @@ export const Projects = () => {
             number: '02'
         },
         {
-            title: 'Site internet pour une épicerie',
-            demo: 'https://site-epicerie-pour-mama.vercel.app',
-            description: "Site quipresente les differents produits d'une épicerie.",
-            order: 'sm:order-last',
-            image: epicerie,
-            number: '03'
-        },
-        
-        {
             title: 'blog sur le developpement personnel',
             demo: 'https://the-mind-set.netlify.app',
             description: "Blog qui présente quelques articles sur le developpment personne, la motivation et les relations homme-femme.",
             image: blog,
-            
+            order: 'sm:order-last',
+            number: '03'
+        },
+        {
+            title: "Site internet d'une couturière",
+            demo: 'https://website-for-seamstress.vercel.app',
+            description: "site internet vitrine pour une couturière afin de présenter ses services et réalisations.",
+            image: seamstress,
             number: '04'
         },
 
