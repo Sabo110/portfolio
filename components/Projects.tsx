@@ -5,6 +5,7 @@ import easyorder from "@/public/easyorder.jpg"
 import seamstress from "@/public/seamstress.png"
 import blog from "@/public/blog.jpg"
 import joel_website from "@/public/joel-website.png"
+import spec_builder from "@/public/spec_builder.png"
 
 import { cn } from '@/lib/utils'
 import { ExternalLink } from 'lucide-react';
@@ -40,6 +41,14 @@ export const Projects = () => {
             description: "site internet vitrine pour une couturière afin de présenter ses services et réalisations.",
             image: seamstress,
             number: '03'
+        },
+        {
+            title: "Site internet d'une couturière",
+            demo: 'https://spec-builder.appwrite.network',
+            description: "site internet vitrine pour une couturière afin de présenter ses services et réalisations.",
+            image: spec_builder,
+            number: '04',
+            order: 'sm:order-last',
         },
 
     ]
